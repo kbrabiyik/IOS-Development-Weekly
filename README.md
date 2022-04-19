@@ -1,2 +1,2 @@
 # IOS-Development-Weekly
-Swift playgrounds exercises
+Swift playgrounds exercises / Some app UI designs
