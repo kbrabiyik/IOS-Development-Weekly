@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViperKullanimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVR-Lj-g4c">
+                                <rect key="frame" x="177.5" y="144" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sayı 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1V-Kk-kga">
+                                <rect key="frame" x="32" y="274" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sayı 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gx6-Vh-rvZ">
+                                <rect key="frame" x="32" y="408" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bab-kL-ddT">
+                                <rect key="frame" x="32" y="492" width="90.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TOPLAMA"/>
+                                <connections>
+                                    <action selector="buttonToplama:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YXc-lO-zov"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-AS-hVL">
+                                <rect key="frame" x="300" y="492" width="82" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ÇARPMA"/>
+                                <connections>
+                                    <action selector="buttonCarpma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeP-Wh-bRe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VVR-Lj-g4c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="0WH-HX-ZZK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uhh-AS-hVL" secondAttribute="trailing" constant="32" id="1LB-yV-fhX"/>
+                            <constraint firstItem="Uhh-AS-hVL" firstAttribute="top" secondItem="gx6-Vh-rvZ" secondAttribute="bottom" constant="50" id="3fH-Sf-OsH"/>
+                            <constraint firstItem="a1V-Kk-kga" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Axx-5x-04l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gx6-Vh-rvZ" secondAttribute="trailing" constant="32" id="BY5-DK-oID"/>
+                            <constraint firstItem="a1V-Kk-kga" firstAttribute="top" secondItem="VVR-Lj-g4c" secondAttribute="bottom" constant="100" id="F0l-xb-RTe"/>
+                            <constraint firstItem="bab-kL-ddT" firstAttribute="top" secondItem="gx6-Vh-rvZ" secondAttribute="bottom" constant="50" id="I6k-YO-43C"/>
+                            <constraint firstItem="gx6-Vh-rvZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="UWt-Db-RNH"/>
+                            <constraint firstItem="bab-kL-ddT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Z0x-4u-bFo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a1V-Kk-kga" secondAttribute="trailing" constant="32" id="gxN-yw-UMh"/>
+                            <constraint firstItem="VVR-Lj-g4c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iRg-1Z-Ojg"/>
+                            <constraint firstItem="gx6-Vh-rvZ" firstAttribute="top" secondItem="a1V-Kk-kga" secondAttribute="bottom" constant="100" id="y7R-SZ-rgt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LabelSonuc" destination="VVR-Lj-g4c" id="AZZ-0m-ZI9"/>
+                        <outlet property="textFieldSayi1" destination="a1V-Kk-kga" id="PPi-F1-sMu"/>
+                        <outlet property="textFieldSayi2" destination="gx6-Vh-rvZ" id="zq2-6V-rEa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="-200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
